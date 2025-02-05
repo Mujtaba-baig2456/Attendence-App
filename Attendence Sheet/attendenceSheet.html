@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendence app</title>
+    <link rel="stylesheet" href="AttendenceSheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <div id="form">
+            
+            <form action="#">
+                
+                <fieldset>
+                    <legend>
+                        <img src="student icon.png" alt="student icon" >
+                    <h3>Student Attendence Sheet</h3>
+                    </legend>
+                    <label for="studentName">Student Name&nbsp;</label> <br>
+                    <input type="text" id="studentName" ><br><br>
+                    <label for="studentRollNo">Student Roll No&nbsp;</label><br>
+                    <input type="number" id="studentRollNo" ><br><br>
+                    <label for="studentday">Student Day&nbsp;</label><br>
+                    <input type="date" id="studentday" ><br><br>
+                    <button onclick="addValue()">Submit</button>
+                </fieldset>
+            </form>
+        </div>
+        <div id="table">
+            <table id="tbody">
+                <tr>
+                    <th>Student Name</th>
+                    <th>Student Roll No</th>
+                    <th>Student Day</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="AttendenceSheet.js"></script>
+</body>
+</html>
